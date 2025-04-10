@@ -127,7 +127,15 @@ export function Hero() {
       </div>
 
       {/* New "Why Choose Us?" section */}
-      <div className="absolute inset-0 bg-gradient-to-r from-black/80 to-primary/90 mix-blend-multiply" />
+      <div 
+        className="absolute inset-0 bg-cover bg-center"
+        style={{
+          backgroundImage: `url('https://images.unsplash.com/photo-1606761568499-6d2451b23c66?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80')`,
+          opacity: 0.9,
+          mixBlendMode: 'multiply',
+        }}
+      />
+      <div className="absolute inset-0 bg-gradient-to-r from-primary/80 to-primary/90 mix-blend-multiply" />
       <div className="relative mx-auto max-w-7xl px-4 py-24 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div>
