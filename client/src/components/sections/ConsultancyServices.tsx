@@ -36,9 +36,9 @@ export function ConsultancyServices() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold mb-2">
-            Unmatched Services.
+            Professional Consultancy.
             <br />
-            <span className="text-white">Unmatched Excellence.</span>
+            <span className="text-white">Excellence in Every Service.</span>
           </h2>
         </div>
 

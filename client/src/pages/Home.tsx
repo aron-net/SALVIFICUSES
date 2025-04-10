@@ -5,7 +5,7 @@ import { About } from "@/components/sections/About";
 import { Testimonials } from "@/components/sections/Testimonials";
 import { Cta } from "@/components/sections/Cta";
 import { Contact } from "@/components/sections/Contact";
-import { ShippingServices } from "@/components/sections/ShippingServices";
+import { ConsultancyServices } from "@/components/sections/ConsultancyServices";
 
 export default function Home() {
   return (
@@ -13,7 +13,7 @@ export default function Home() {
       <Hero />
       <About />
       <Services />
-      <ShippingServices />
+      <ConsultancyServices />
       <Testimonials />
       <Contact />
     </>

@@ -4,15 +4,15 @@ import { CheckCircle } from "lucide-react";
 const features = [
   {
     title: "Experience & Reliability",
-    description: "Over 15 years of successful shipping and logistics operations worldwide."
+    description: "Years of successful consultancy and professional services across Uganda and East Africa."
   },
   {
-    title: "Technology & Innovation",
-    description: "Using cutting-edge technology to provide real-time tracking and transparent logistics."
+    title: "Local Expertise",
+    description: "Deep understanding of Ugandan markets, regulations, and business environments for optimal results."
   },
   {
-    title: "Global Expertise",
-    description: "A network spanning across 85+ countries with local insight and global capabilities."
+    title: "Comprehensive Services",
+    description: "From construction consultancy to investment advisory and labour export services, all under one roof."
   }
 ];
 
@@ -76,13 +76,13 @@ export function About() {
             transition={{ duration: 0.5 }}
           >
             <p className="text-gray-700 mb-6">
-              Salvificus Shipping Services Ltd. is pioneered in Dubai, the fastest hub transit of trade & commercial in the Middle East region. The company has expanded and now has presence in diverse port of global network in terms of trade's movement like the US, Asia, Europe, Africa and other parts of the globe.
+              Salvificus Establishments Company Limited is a leading Ugandan consultancy firm providing comprehensive services across various sectors. With our headquarters in Kampala, we offer expert guidance and solutions tailored to the specific needs of our clients.
             </p>
             <p className="text-gray-700 mb-6">
-              We have the advantages of modern logistics to handle multi-modal transport services including air, sea, land, customs clearance, warehousing, and distribution for industry sectors.
+              Our team of highly skilled professionals brings years of expertise in construction project management, investment advisory, technical works, labour export services, and language courses to deliver exceptional results for businesses and individuals alike.
             </p>
             <p className="text-blue-600 font-medium">
-              Offices in the headquarters: Customs clearing is established in Mumbai & Karachi, Jordan, Turkey, Sri Lanka, Malaysia, Vietnam, Belgium.
+              We are committed to promoting growth and development in Uganda and East Africa through innovative solutions and world-class consultancy services that meet international standards.
             </p>
           </motion.div>
         </div>
