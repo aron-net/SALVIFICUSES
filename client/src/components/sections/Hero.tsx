@@ -126,7 +126,68 @@ export function Hero() {
         </div>
       </div>
 
-      {/* Section removed */}
+      {/* Why Choose Us Section */}
+      <div className="relative bg-gradient-to-r from-gray-900 to-primary py-24">
+        <div className="absolute inset-0">
+          <img
+            src="https://images.unsplash.com/photo-1606761568499-6d2451b23c66?ixlib=rb-4.0.3"
+            alt="Background"
+            className="w-full h-full object-cover opacity-20"
+          />
+        </div>
+        <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold text-white mb-4">Why Choose Us?</h2>
+            <p className="text-gray-300 text-lg max-w-2xl mx-auto">
+              We deliver excellence through experience, innovation, and unwavering commitment to your success.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {/* Card 1 */}
+            <div className="bg-white/10 backdrop-blur-lg rounded-lg p-6 transform hover:scale-105 transition-transform duration-300">
+              <div className="text-blue-400 mb-4">
+                <svg className="w-12 h-12" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-5-9h10v2H7z"/>
+                </svg>
+              </div>
+              <h3 className="text-xl font-bold text-white mb-2">#1. An Expert Team</h3>
+              <p className="text-gray-300">Our consultants and technical experts are highly experienced and trained in their respective fields.</p>
+            </div>
+
+            {/* Card 2 */}
+            <div className="bg-white/10 backdrop-blur-lg rounded-lg p-6 transform hover:scale-105 transition-transform duration-300">
+              <div className="text-red-400 mb-4">
+                <svg className="w-12 h-12" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-5-9h10v2H7z"/>
+                </svg>
+              </div>
+              <h3 className="text-xl font-bold text-white mb-2">#2. Our Personalized Approach</h3>
+              <p className="text-gray-300">We understand the unique challenges faced by our clients and offer tailored solutions to meet their needs.</p>
+            </div>
+
+            {/* Card 3 */}
+            <div className="bg-white/10 backdrop-blur-lg rounded-lg p-6 transform hover:scale-105 transition-transform duration-300">
+              <div className="text-green-400 mb-4">
+                <svg className="w-12 h-12" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-5-9h10v2H7z"/>
+                </svg>
+              </div>
+              <h3 className="text-xl font-bold text-white mb-2">#3. A Global Perspective</h3>
+              <p className="text-gray-300">As a company catering to Ugandans abroad, we bridge the gap between global best practices and local opportunities.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="relative mx-auto max-w-7xl px-4 py-24 sm:px-6 lg:px-8">
+        <div className="grid lg:grid-cols-2 gap-12 items-center">
+          <div>
+
+          </div>
+        </div>
+      </div>
+
     </section>
   );
 }
