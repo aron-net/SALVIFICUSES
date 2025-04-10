@@ -4,14 +4,14 @@ import {
   Database,
   Rocket,
   Cloud,
-  HeadphonesIcon
+  Headphones
 } from "lucide-react";
 
 export const services = [
   {
     title: "Business Strategy",
     description: "Develop comprehensive business strategies to maximize your market potential and achieve sustainable growth.",
-    icon: <BarChart className="h-6 w-6" />,
+    icon: "BarChart",
     iconBg: "bg-primary-100",
     iconColor: "text-primary-600",
     linkColor: "text-primary-600 hover:text-primary-700",
@@ -20,7 +20,7 @@ export const services = [
   {
     title: "Software Development",
     description: "Custom software solutions built to address your specific business challenges and streamline operations.",
-    icon: <Code className="h-6 w-6" />,
+    icon: "Code",
     iconBg: "bg-green-100",
     iconColor: "text-green-600",
     linkColor: "text-green-600 hover:text-green-700",
@@ -29,7 +29,7 @@ export const services = [
   {
     title: "Customer Support",
     description: "Exceptional customer service solutions to enhance satisfaction and build long-term relationships.",
-    icon: <HeadphonesIcon className="h-6 w-6" />,
+    icon: "Headphones",
     iconBg: "bg-purple-100",
     iconColor: "text-purple-600",
     linkColor: "text-purple-600 hover:text-purple-700",
@@ -38,7 +38,7 @@ export const services = [
   {
     title: "Digital Marketing",
     description: "Strategic digital marketing campaigns to increase your online presence and drive qualified leads.",
-    icon: <Rocket className="h-6 w-6" />,
+    icon: "Rocket",
     iconBg: "bg-red-100",
     iconColor: "text-red-600",
     linkColor: "text-red-600 hover:text-red-700",
@@ -47,7 +47,7 @@ export const services = [
   {
     title: "Data Analytics",
     description: "Transform raw data into actionable insights to make informed business decisions and drive growth.",
-    icon: <Database className="h-6 w-6" />,
+    icon: "Database",
     iconBg: "bg-amber-100",
     iconColor: "text-amber-600",
     linkColor: "text-amber-600 hover:text-amber-700",
@@ -56,7 +56,7 @@ export const services = [
   {
     title: "Cloud Solutions",
     description: "Secure and scalable cloud infrastructure to modernize your business and improve operational efficiency.",
-    icon: <Cloud className="h-6 w-6" />,
+    icon: "Cloud",
     iconBg: "bg-emerald-100",
     iconColor: "text-emerald-600",
     linkColor: "text-emerald-600 hover:text-emerald-700",
