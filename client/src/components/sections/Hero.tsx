@@ -23,8 +23,8 @@ export function Hero() {
           transition={{ duration: 0.6 }}
         >
           <h1 className="text-4xl font-extrabold tracking-tight sm:text-5xl lg:text-6xl mb-6">
-            SHIPPING & LOGISTICS<br/>
-            <span className="mt-2 block">AROUND THE WORLD</span>
+            CONSULTANCY & SERVICES<br/>
+            <span className="mt-2 block">FOR UGANDANS WORLDWIDE</span>
           </h1>
           <div className="mt-10">
             <Button 
@@ -42,24 +42,24 @@ export function Hero() {
       <div className="relative z-10 max-w-6xl mx-auto px-4 -mb-32">
         <div className="grid grid-cols-1 md:grid-cols-5 gap-1 bg-white rounded-lg shadow-xl overflow-hidden">
           <div className="bg-white p-6 hover:bg-gray-50 transition-colors text-center">
-            <h3 className="font-semibold text-primary uppercase text-sm">SEA FREIGHT</h3>
-            <p className="text-gray-600 text-xs mt-2">Ocean Transport</p>
+            <h3 className="font-semibold text-primary uppercase text-sm">CONSTRUCTION</h3>
+            <p className="text-gray-600 text-xs mt-2">Project Management</p>
           </div>
           <div className="bg-white p-6 hover:bg-gray-50 transition-colors text-center">
-            <h3 className="font-semibold text-primary uppercase text-sm">LAND FREIGHT</h3>
-            <p className="text-gray-600 text-xs mt-2">Ground Transport</p>
+            <h3 className="font-semibold text-primary uppercase text-sm">INVESTMENT</h3>
+            <p className="text-gray-600 text-xs mt-2">Advisory Services</p>
           </div>
           <div className="bg-white p-6 hover:bg-gray-50 transition-colors text-center">
-            <h3 className="font-semibold text-primary uppercase text-sm">AIR FREIGHT</h3>
-            <p className="text-gray-600 text-xs mt-2">Aerial Transport</p>
+            <h3 className="font-semibold text-primary uppercase text-sm">TECHNICAL</h3>
+            <p className="text-gray-600 text-xs mt-2">Specialized Works</p>
           </div>
           <div className="bg-primary text-white p-6 hover:bg-primary/90 transition-colors text-center">
-            <h3 className="font-semibold uppercase text-sm">PROJECT CARGO</h3>
-            <p className="text-white/80 text-xs mt-2">Specialized Handling</p>
+            <h3 className="font-semibold uppercase text-sm">LABOUR EXPORT</h3>
+            <p className="text-white/80 text-xs mt-2">Overseas Opportunities</p>
           </div>
           <div className="bg-white p-6 hover:bg-gray-50 transition-colors text-center">
-            <h3 className="font-semibold text-primary uppercase text-sm">SHIPPING AGENCY</h3>
-            <p className="text-gray-600 text-xs mt-2">Full Management</p>
+            <h3 className="font-semibold text-primary uppercase text-sm">LANGUAGE</h3>
+            <p className="text-gray-600 text-xs mt-2">Expert Courses</p>
           </div>
         </div>
       </div>

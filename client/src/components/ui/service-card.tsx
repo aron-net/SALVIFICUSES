@@ -1,4 +1,4 @@
-import { ArrowRight, Ship, Truck, Plane, Workflow, Package, Building } from "lucide-react";
+import { ArrowRight, Building, Briefcase, Users, Globe, Wrench, BarChart } from "lucide-react";
 import { motion } from "framer-motion";
 
 interface ServiceCardProps {
@@ -14,13 +14,13 @@ interface ServiceCardProps {
 // Function to get the correct icon component based on icon name
 const getIconComponent = (iconName: string) => {
   switch(iconName) {
-    case 'Ship': return <Ship className="h-6 w-6" />;
-    case 'Truck': return <Truck className="h-6 w-6" />;
-    case 'Plane': return <Plane className="h-6 w-6" />;
-    case 'Package': return <Package className="h-6 w-6" />;
-    case 'Workflow': return <Workflow className="h-6 w-6" />;
     case 'Building': return <Building className="h-6 w-6" />;
-    default: return <Ship className="h-6 w-6" />;
+    case 'Briefcase': return <Briefcase className="h-6 w-6" />;
+    case 'Users': return <Users className="h-6 w-6" />;
+    case 'Globe': return <Globe className="h-6 w-6" />;
+    case 'Wrench': return <Wrench className="h-6 w-6" />;
+    case 'BarChart': return <BarChart className="h-6 w-6" />;
+    default: return <Building className="h-6 w-6" />;
   }
 }
 
