@@ -1,8 +1,53 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, ChevronDown } from "lucide-react";
 import { motion } from "framer-motion";
+import { useState } from "react";
+
+// Define service details
+const serviceDetails = [
+  {
+    title: "CONSTRUCTION",
+    shortDesc: "Project Management",
+    longDesc: "Our construction consultancy services include project planning, architectural design oversight, quality assurance, budget management, and full construction supervision to ensure your projects are completed on time and within budget.",
+    isHighlighted: false
+  },
+  {
+    title: "INVESTMENT",
+    shortDesc: "Advisory Services",
+    longDesc: "Get expert investment advisory services including market analysis, feasibility studies, business establishment guidance in Uganda, and strategic investment opportunities designed specifically for Ugandans living abroad.",
+    isHighlighted: false
+  },
+  {
+    title: "TECHNICAL",
+    shortDesc: "Specialized Works",
+    longDesc: "We provide technical consulting for electrical and mechanical installations, maintenance services, innovative technological solutions for various industries, and specialized technical support for complex projects.",
+    isHighlighted: false
+  },
+  {
+    title: "LABOUR EXPORT",
+    shortDesc: "Overseas Opportunities",
+    longDesc: "Our labour export program helps qualified candidates find international job opportunities. We manage the entire process from recruitment and selection to placement, ensuring a smooth transition to working abroad.",
+    isHighlighted: true
+  },
+  {
+    title: "LANGUAGE",
+    shortDesc: "Expert Courses",
+    longDesc: "Learn from our expert language tutors who ensure students gain fluency in various global languages including Spanish, French, German, and English. Our courses are designed for both personal and professional development.",
+    isHighlighted: false
+  }
+];
 
 export function Hero() {
+  const [activeService, setActiveService] = useState<number | null>(null);
+
+  const toggleService = (index: number) => {
+    if (activeService === index) {
+      setActiveService(null);
+    } else {
+      setActiveService(index);
+    }
+  };
+
   return (
     <section 
       id="home" 
@@ -38,29 +83,41 @@ export function Hero() {
         </motion.div>
       </div>
       
-      {/* Service boxes like in the reference image */}
+      {/* Interactive Service boxes */}
       <div className="relative z-10 max-w-6xl mx-auto px-4 -mb-32">
         <div className="grid grid-cols-1 md:grid-cols-5 gap-1 bg-white rounded-lg shadow-xl overflow-hidden">
-          <div className="bg-white p-6 hover:bg-gray-50 transition-colors text-center">
-            <h3 className="font-semibold text-primary uppercase text-sm">CONSTRUCTION</h3>
-            <p className="text-gray-600 text-xs mt-2">Project Management</p>
-          </div>
-          <div className="bg-white p-6 hover:bg-gray-50 transition-colors text-center">
-            <h3 className="font-semibold text-primary uppercase text-sm">INVESTMENT</h3>
-            <p className="text-gray-600 text-xs mt-2">Advisory Services</p>
-          </div>
-          <div className="bg-white p-6 hover:bg-gray-50 transition-colors text-center">
-            <h3 className="font-semibold text-primary uppercase text-sm">TECHNICAL</h3>
-            <p className="text-gray-600 text-xs mt-2">Specialized Works</p>
-          </div>
-          <div className="bg-primary text-white p-6 hover:bg-primary/90 transition-colors text-center">
-            <h3 className="font-semibold uppercase text-sm">LABOUR EXPORT</h3>
-            <p className="text-white/80 text-xs mt-2">Overseas Opportunities</p>
-          </div>
-          <div className="bg-white p-6 hover:bg-gray-50 transition-colors text-center">
-            <h3 className="font-semibold text-primary uppercase text-sm">LANGUAGE</h3>
-            <p className="text-gray-600 text-xs mt-2">Expert Courses</p>
-          </div>
+          {serviceDetails.map((service, index) => (
+            <div key={index} className="relative">
+              <button 
+                onClick={() => toggleService(index)}
+                className={`w-full ${service.isHighlighted ? 'bg-primary text-white' : 'bg-white'} p-6 hover:${service.isHighlighted ? 'bg-primary/90' : 'bg-gray-50'} transition-colors text-center cursor-pointer`}
+              >
+                <h3 className={`font-semibold ${service.isHighlighted ? '' : 'text-primary'} uppercase text-sm`}>{service.title}</h3>
+                <p className={`${service.isHighlighted ? 'text-white/80' : 'text-gray-600'} text-xs mt-2`}>{service.shortDesc}</p>
+                <ChevronDown className={`h-4 w-4 mx-auto mt-2 ${activeService === index ? 'rotate-180' : ''} transition-transform ${service.isHighlighted ? 'text-white/80' : 'text-gray-400'}`} />
+              </button>
+              
+              {activeService === index && (
+                <motion.div 
+                  initial={{ opacity: 0, height: 0 }}
+                  animate={{ opacity: 1, height: 'auto' }}
+                  exit={{ opacity: 0, height: 0 }}
+                  transition={{ duration: 0.3 }}
+                  className={`${service.isHighlighted ? 'bg-primary/95 text-white' : 'bg-white'} border-t border-gray-100 p-4 text-left shadow-lg`}
+                >
+                  <p className={`${service.isHighlighted ? 'text-white/90' : 'text-gray-700'} text-sm`}>
+                    {service.longDesc}
+                  </p>
+                  <a 
+                    href="#services" 
+                    className={`mt-3 inline-flex items-center text-xs font-medium ${service.isHighlighted ? 'text-white hover:text-white/80' : 'text-primary hover:text-primary/80'}`}
+                  >
+                    Learn more <ArrowRight className="ml-1 h-3 w-3" />
+                  </a>
+                </motion.div>
+              )}
+            </div>
+          ))}
         </div>
       </div>
     </section>

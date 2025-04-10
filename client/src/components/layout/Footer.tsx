@@ -43,12 +43,12 @@ export function Footer() {
           <div className="space-y-8 xl:col-span-1">
             <div className="flex items-center">
               <div className="h-10 w-10 bg-primary rounded-md flex items-center justify-center">
-                <span className="text-white font-bold text-xl">SF</span>
+                <span className="text-white font-bold text-xl">SE</span>
               </div>
               <span className="ml-3 text-xl font-bold">Salvificus</span>
             </div>
             <p className="text-gray-300 text-base">
-              Transforming businesses with innovative solutions. We help companies of all sizes optimize their operations and drive growth.
+              Leading consultancy services for Ugandans worldwide. We provide expertise in construction, investment, technical works, labour export, and language training.
             </p>
             <div className="flex space-x-6">
               {socialLinks.map((social, index) => (
@@ -120,7 +120,7 @@ export function Footer() {
         </div>
         <div className="mt-12 pt-8 border-t border-gray-700">
           <p className="text-base text-gray-400 xl:text-center">
-            &copy; {new Date().getFullYear()} Salvificus, Inc. All rights reserved.
+            &copy; {new Date().getFullYear()} Salvificus Establishments Company Limited. All rights reserved.
           </p>
         </div>
       </div>
