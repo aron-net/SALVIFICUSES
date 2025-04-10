@@ -21,18 +21,6 @@ export function Navbar() {
 
   return (
     <header className="bg-primary text-white fixed w-full top-0 z-50">
-      {/* Top contact bar */}
-      <div className="bg-primary/90 py-2 text-white text-sm">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
-          <div className="flex items-center">
-            <Phone className="h-4 w-4 mr-2" />
-            <span>Contact Us</span>
-          </div>
-          <div>
-            <a href="#contact" className="hover:underline">REQUEST A CONSULTATION</a>
-          </div>
-        </div>
-      </div>
       
       {/* Main navigation */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

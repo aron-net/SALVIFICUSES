@@ -67,22 +67,27 @@ export function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
         >
-          <h1 className="text-4xl font-extrabold tracking-tight sm:text-5xl lg:text-6xl mb-6">
-            CONSULTANCY & SERVICES<br/>
-            <span className="mt-2 block">FOR UGANDANS WORLDWIDE</span>
-          </h1>
-          <div className="mt-10">
-            <Button 
-              size="lg" 
-              asChild
-              className="bg-white text-primary hover:bg-white/90 px-8 py-6 rounded-full"
-            >
-              <a href="#contact">QUOTE</a>
-            </Button>
+          <div className="flex flex-col gap-4">
+            <h1 className="text-6xl font-bold leading-tight">
+              <span className="text-white">EMPOWERING UGANDANS</span>
+              <br />
+              <span className="text-primary-100">WORLDWIDE</span>
+            </h1>
+            <p className="text-xl text-gray-200 max-w-2xl">
+              Your trusted partner in construction, investment, and workforce solutions. Building bridges to global opportunities.
+            </p>
+            <div className="flex gap-4 mt-8">
+              <a href="#contact" className="px-8 py-4 bg-white text-primary font-semibold rounded-md hover:bg-opacity-90 transition-all">
+                Get Started
+              </a>
+              <a href="#services" className="px-8 py-4 border-2 border-white text-white font-semibold rounded-md hover:bg-white hover:text-primary transition-all">
+                Our Services
+              </a>
+            </div>
           </div>
         </motion.div>
       </div>
-      
+
       {/* Interactive Service boxes */}
       <div className="relative z-10 max-w-6xl mx-auto px-4 -mb-32">
         <div className="grid grid-cols-1 md:grid-cols-5 gap-1 bg-white rounded-lg shadow-xl overflow-hidden">
@@ -96,7 +101,7 @@ export function Hero() {
                 <p className={`${service.isHighlighted ? 'text-white/80' : 'text-gray-600'} text-xs mt-2`}>{service.shortDesc}</p>
                 <ChevronDown className={`h-4 w-4 mx-auto mt-2 ${activeService === index ? 'rotate-180' : ''} transition-transform ${service.isHighlighted ? 'text-white/80' : 'text-gray-400'}`} />
               </button>
-              
+
               {activeService === index && (
                 <motion.div 
                   initial={{ opacity: 0, height: 0 }}
