@@ -138,39 +138,43 @@ export function Hero() {
               We deliver excellence through experience, innovation, and unwavering commitment to your success.
             </p>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
-              <div className="bg-white/10 backdrop-blur-sm p-6 rounded-lg transform hover:scale-105 transition-transform duration-300">
-                <div className="text-center">
-                  <div className="w-16 h-16 mx-auto mb-4 bg-primary/20 rounded-full flex items-center justify-center">
-                    <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                    </svg>
+              {[
+                {
+                  title: "An Expert Team",
+                  description: "Our consultants and technical experts are highly experienced and trained in their respective fields.",
+                  icon: "👥"
+                },
+                {
+                  title: "Personalized Approach",
+                  description: "We understand the unique challenges faced by our clients and offer tailored solutions to meet their needs.",
+                  icon: "🎯"
+                },
+                {
+                  title: "Global Perspective",
+                  description: "As a company catering to Ugandans abroad, we bridge the gap between global best practices and local opportunities.",
+                  icon: "🌍"
+                },
+                {
+                  title: "Results-Oriented",
+                  description: "We focus on delivering measurable outcomes that contribute to our clients' success.",
+                  icon: "📈"
+                },
+                {
+                  title: "Reliable Support",
+                  description: "Our team is always available to provide guidance and support at every stage of your project.",
+                  icon: "🤝"
+                }
+              ].map((item, index) => (
+                <div key={index} className="bg-white/10 backdrop-blur-sm p-6 rounded-lg transform hover:scale-105 transition-transform duration-300">
+                  <div className="text-center">
+                    <div className="w-16 h-16 mx-auto mb-4 bg-primary/20 rounded-full flex items-center justify-center text-3xl">
+                      {item.icon}
+                    </div>
+                    <h3 className="text-lg font-semibold text-white mb-2">{item.title}</h3>
+                    <p className="text-sm text-gray-300">{item.description}</p>
                   </div>
-                  <h3 className="text-lg font-semibold text-white mb-2">PROVEN EXPERTISE</h3>
-                  <p className="text-sm text-gray-300">15+ years of industry excellence</p>
                 </div>
-              </div>
-              <div className="bg-white/10 backdrop-blur-sm p-6 rounded-lg transform hover:scale-105 transition-transform duration-300">
-                <div className="text-center">
-                  <div className="w-16 h-16 mx-auto mb-4 bg-primary/20 rounded-full flex items-center justify-center">
-                    <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
-                    </svg>
-                  </div>
-                  <h3 className="text-lg font-semibold text-white mb-2">INNOVATIVE APPROACH</h3>
-                  <p className="text-sm text-gray-300">Cutting-edge solutions</p>
-                </div>
-              </div>
-              <div className="bg-white/10 backdrop-blur-sm p-6 rounded-lg transform hover:scale-105 transition-transform duration-300">
-                <div className="text-center">
-                  <div className="w-16 h-16 mx-auto mb-4 bg-primary/20 rounded-full flex items-center justify-center">
-                    <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
-                    </svg>
-                  </div>
-                  <h3 className="text-lg font-semibold text-white mb-2">CLIENT SUCCESS</h3>
-                  <p className="text-sm text-gray-300">500+ satisfied clients</p>
-                </div>
-              </div>
+              ))}
             </div>
           </div>
           <div className="hidden lg:block">
