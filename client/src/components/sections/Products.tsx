@@ -18,12 +18,12 @@ export function Products() {
     <section id="products" className="py-16 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-base font-semibold text-primary tracking-wide uppercase">Products</h2>
+          <h2 className="text-base font-semibold text-primary tracking-wide uppercase">Services</h2>
           <p className="mt-1 text-4xl font-extrabold text-gray-900 sm:text-5xl sm:tracking-tight">
-            Our Premium Solutions
+            Our Premium Offerings
           </p>
           <p className="max-w-xl mt-5 mx-auto text-xl text-gray-500">
-            Discover our innovative products designed to transform your business operations and drive results.
+            Discover our comprehensive consultancy services designed to help you achieve your goals in Uganda and beyond.
           </p>
         </div>
 
@@ -54,7 +54,7 @@ export function Products() {
             size="lg" 
             className="bg-primary hover:bg-primary/90"
           >
-            View All Products
+            View All Services
           </Button>
         </div>
       </div>
