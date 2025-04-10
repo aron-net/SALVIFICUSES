@@ -1,62 +1,62 @@
 import {
-  BarChart,
-  Code,
-  Database,
-  Rocket,
-  Cloud,
-  Headphones
+  Ship,
+  Truck,
+  Plane,
+  Workflow,
+  Package,
+  Building
 } from "lucide-react";
 
 export const services = [
   {
-    title: "Business Strategy",
-    description: "Develop comprehensive business strategies to maximize your market potential and achieve sustainable growth.",
-    icon: "BarChart",
+    title: "Sea Freight",
+    description: "Complete ocean shipping solutions with efficient containerized and bulk cargo transport worldwide.",
+    icon: "Ship",
     iconBg: "bg-primary-100",
     iconColor: "text-primary-600",
     linkColor: "text-primary-600 hover:text-primary-700",
     href: "#"
   },
   {
-    title: "Software Development",
-    description: "Custom software solutions built to address your specific business challenges and streamline operations.",
-    icon: "Code",
+    title: "Land Freight",
+    description: "Reliable ground transportation services using a network of premium carriers to ensure timely delivery.",
+    icon: "Truck",
     iconBg: "bg-green-100",
     iconColor: "text-green-600",
     linkColor: "text-green-600 hover:text-green-700",
     href: "#"
   },
   {
-    title: "Customer Support",
-    description: "Exceptional customer service solutions to enhance satisfaction and build long-term relationships.",
-    icon: "Headphones",
+    title: "Air Freight",
+    description: "Fast and efficient air cargo services that prioritize speed without compromising on security or reliability.",
+    icon: "Plane",
     iconBg: "bg-purple-100",
     iconColor: "text-purple-600",
     linkColor: "text-purple-600 hover:text-purple-700",
     href: "#"
   },
   {
-    title: "Digital Marketing",
-    description: "Strategic digital marketing campaigns to increase your online presence and drive qualified leads.",
-    icon: "Rocket",
+    title: "Project Cargo",
+    description: "Specialized handling of oversized, heavy, high-value or critical project cargo with meticulous planning.",
+    icon: "Package",
     iconBg: "bg-red-100",
     iconColor: "text-red-600",
     linkColor: "text-red-600 hover:text-red-700",
     href: "#"
   },
   {
-    title: "Data Analytics",
-    description: "Transform raw data into actionable insights to make informed business decisions and drive growth.",
-    icon: "Database",
+    title: "Logistics Management",
+    description: "End-to-end logistics solutions including warehousing, distribution, inventory management and supply chain optimization.",
+    icon: "Workflow",
     iconBg: "bg-amber-100",
     iconColor: "text-amber-600",
     linkColor: "text-amber-600 hover:text-amber-700",
     href: "#"
   },
   {
-    title: "Cloud Solutions",
-    description: "Secure and scalable cloud infrastructure to modernize your business and improve operational efficiency.",
-    icon: "Cloud",
+    title: "Shipping Agency",
+    description: "Full shipping agency services including port operations, vessel handling, documentation and customs clearance.",
+    icon: "Building",
     iconBg: "bg-emerald-100",
     iconColor: "text-emerald-600",
     linkColor: "text-emerald-600 hover:text-emerald-700",

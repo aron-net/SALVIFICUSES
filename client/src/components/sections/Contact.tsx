@@ -184,8 +184,9 @@ export function Contact() {
                     <div className="ml-3">
                       <dt className="text-sm font-medium text-gray-500">Address</dt>
                       <dd className="mt-1 text-sm text-gray-900">
-                        123 Business Avenue<br />
-                        New York, NY 10001
+                        71-75 Shelton Street<br />
+                        Covent Garden, London, WC2H 9JQ<br />
+                        United Kingdom
                       </dd>
                     </div>
                   </div>
@@ -195,7 +196,7 @@ export function Contact() {
                     </div>
                     <div className="ml-3">
                       <dt className="text-sm font-medium text-gray-500">Phone</dt>
-                      <dd className="mt-1 text-sm text-gray-900">+1 (555) 123-4567</dd>
+                      <dd className="mt-1 text-sm text-gray-900">+44 7520 636249</dd>
                     </div>
                   </div>
                   <div className="flex">
