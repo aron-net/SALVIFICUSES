@@ -180,11 +180,26 @@ export function Hero() {
         </div>
       </div>
 
-      <div className="relative mx-auto max-w-7xl px-4 py-24 sm:px-6 lg:px-8">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
-          <div>
-
-          </div>
+      <div className="relative mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
+        <div className="grid lg:grid-cols-3 gap-8 items-center">
+          {[
+            {
+              icon: "👥",
+              title: "#4. We're Results-Oriented",
+              description: "We focus on delivering measurable outcomes that contribute to our clients' success."
+            },
+            {
+              icon: "🤝",
+              title: "#5. Reliable Support",
+              description: "Our team is always available to provide guidance and support at every stage of your project."
+            }
+          ].map((item, index) => (
+            <div key={index} className="bg-white/10 backdrop-blur-lg rounded-lg p-6 transform hover:scale-105 transition-transform duration-300">
+              <div className="text-4xl mb-4">{item.icon}</div>
+              <h3 className="text-xl font-bold text-white mb-2">{item.title}</h3>
+              <p className="text-gray-300">{item.description}</p>
+            </div>
+          ))}
         </div>
       </div>
 
