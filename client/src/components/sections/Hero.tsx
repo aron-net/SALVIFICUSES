@@ -3,9 +3,6 @@ import { ArrowRight, ChevronDown } from "lucide-react";
 import { motion } from "framer-motion";
 import { useState } from "react";
 
-// Define service details
-const [activeHighlight, setActiveHighlight] = useState<number>(3); // Default to LABOUR EXPORT (index 3)
-
 const serviceDetails = [
   {
     title: "CONSTRUCTION",
@@ -36,6 +33,7 @@ const serviceDetails = [
 
 export function Hero() {
   const [activeService, setActiveService] = useState<number | null>(null);
+  const [activeHighlight, setActiveHighlight] = useState<number>(3); // Default to LABOUR EXPORT (index 3)
 
   const toggleService = (index: number) => {
     if (activeService === index) {
