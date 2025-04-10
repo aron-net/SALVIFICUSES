@@ -1,17 +1,17 @@
 import { Facebook, Twitter, Linkedin, Instagram } from "lucide-react";
 
-const solutions = [
-  { label: "Business Strategy", href: "#" },
-  { label: "Software Development", href: "#" },
-  { label: "Customer Support", href: "#" },
-  { label: "Digital Marketing", href: "#" },
+const services = [
+  { label: "Construction Consultancy", href: "#services" },
+  { label: "Investment Advisory", href: "#services" },
+  { label: "Technical Works", href: "#services" },
+  { label: "Labour Export", href: "#services" },
 ];
 
-const products = [
-  { label: "Enterprise Suite", href: "#" },
-  { label: "Analytics Dashboard", href: "#" },
-  { label: "CRM Platform", href: "#" },
-  { label: "Cloud Solutions", href: "#" },
+const solutions = [
+  { label: "Language Courses", href: "#products" },
+  { label: "Project Management", href: "#products" },
+  { label: "Business Setup", href: "#products" },
+  { label: "Advisory Services", href: "#products" },
 ];
 
 const company = [
@@ -78,9 +78,9 @@ export function Footer() {
                 </ul>
               </div>
               <div className="mt-12 md:mt-0">
-                <h3 className="text-sm font-semibold text-gray-200 tracking-wider uppercase">Products</h3>
+                <h3 className="text-sm font-semibold text-gray-200 tracking-wider uppercase">Services</h3>
                 <ul role="list" className="mt-4 space-y-4">
-                  {products.map((item, index) => (
+                  {services.map((item, index) => (
                     <li key={index}>
                       <a href={item.href} className="text-base text-gray-400 hover:text-white transition-colors duration-200">
                         {item.label}

@@ -5,11 +5,10 @@ import { Menu, X, Phone } from "lucide-react";
 
 const navLinks = [
   { href: "#home", label: "HOME" },
-  { href: "#corporate", label: "CORPORATE" },
-  { href: "#services", label: "WE OFFER" },
-  { href: "#partners", label: "PARTNERS" },
-  { href: "#quote", label: "QUOTE" },
-  { href: "#news", label: "NEWS" },
+  { href: "#corporate", label: "ABOUT US" },
+  { href: "#services", label: "SERVICES" },
+  { href: "#products", label: "SOLUTIONS" },
+  { href: "#testimonials", label: "TESTIMONIALS" },
   { href: "#contact", label: "CONTACT US" },
 ];
 
@@ -27,10 +26,10 @@ export function Navbar() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
           <div className="flex items-center">
             <Phone className="h-4 w-4 mr-2" />
-            <span>+44 7520 636249</span>
+            <span>+256 414 000 000</span>
           </div>
           <div>
-            <a href="#contact" className="hover:underline">TRACK YOUR SHIPMENT</a>
+            <a href="#contact" className="hover:underline">REQUEST A CONSULTATION</a>
           </div>
         </div>
       </div>
@@ -41,9 +40,9 @@ export function Navbar() {
           <div className="flex items-center">
             <a href="#" className="flex-shrink-0 flex items-center">
               <div className="h-10 w-10 bg-white rounded-full flex items-center justify-center">
-                <span className="text-primary font-bold">SL</span>
+                <span className="text-primary font-bold">SE</span>
               </div>
-              <span className="ml-2 text-xl font-semibold text-white">Salvificus Limited</span>
+              <span className="ml-2 text-xl font-semibold text-white">Salvificus Establishments</span>
             </a>
             <nav className="hidden md:ml-8 md:flex md:space-x-8">
               {navLinks.map((link, index) => (
@@ -62,7 +61,7 @@ export function Navbar() {
               href="#contact" 
               className="ml-8 inline-flex items-center px-4 py-2 border border-white text-xs font-medium text-white hover:bg-white hover:text-primary focus:outline-none transition-colors duration-200"
             >
-              GET A QUOTE
+              REQUEST CONSULTATION
             </a>
           </div>
           <div className="flex items-center md:hidden">
@@ -101,7 +100,7 @@ export function Navbar() {
                 className="block text-center mx-4 px-4 py-2 border border-white text-sm font-medium text-white hover:bg-white hover:text-primary transition-colors duration-200"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
-                GET A QUOTE
+                REQUEST CONSULTATION
               </a>
             </div>
           </div>
