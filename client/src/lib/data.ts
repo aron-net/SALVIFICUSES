@@ -99,23 +99,23 @@ export const products = [
 
 export const testimonials = [
   {
-    quote: "The enterprise management suite has completely transformed how we operate our business. The customization options and intuitive interface have made adoption across our team seamless.",
+    quote: "Salvificus Limited has consistently delivered our time-sensitive shipments with exceptional reliability. Their global logistics expertise has been instrumental in our international expansion.",
     author: "Sarah Johnson",
-    position: "CEO, TechInnovate",
+    position: "Supply Chain Director, GlobalTech",
     avatarSrc: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=150&q=80",
     rating: 5
   },
   {
-    quote: "The customer support team has been exceptional. They've guided us through implementation and provided ongoing support that exceeds expectations. Highly recommended!",
+    quote: "We've worked with Salvificus for our project cargo needs across three continents. Their attention to detail and specialized handling capabilities have saved us both time and money.",
     author: "Michael Chen",
-    position: "Operations Director, GrowthCo",
+    position: "Operations Director, EngineeringCo",
     avatarSrc: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=150&q=80",
     rating: 5
   },
   {
-    quote: "The analytics dashboard has given us insights we never had before. We've been able to identify trends and opportunities that have directly contributed to our 30% revenue growth.",
+    quote: "The real-time tracking and multimodal transport options that Salvificus provides have revolutionized our supply chain. Their team goes above and beyond with every shipment.",
     author: "Emily Rodriguez",
-    position: "Marketing Manager, FutureRetail",
+    position: "Logistics Manager, RetailGroup",
     avatarSrc: "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=150&q=80",
     rating: 4.5
   }
