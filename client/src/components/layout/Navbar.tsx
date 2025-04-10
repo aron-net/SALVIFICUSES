@@ -26,7 +26,7 @@ export function Navbar() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
           <div className="flex items-center">
             <Phone className="h-4 w-4 mr-2" />
-            <span>+256 414 000 000</span>
+            <span>Contact Us</span>
           </div>
           <div>
             <a href="#contact" className="hover:underline">REQUEST A CONSULTATION</a>
