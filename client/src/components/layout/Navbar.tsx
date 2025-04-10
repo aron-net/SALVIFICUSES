@@ -27,9 +27,11 @@ export function Navbar() {
         <div className="flex justify-between h-16">
           <div className="flex items-center">
             <a href="#" className="flex-shrink-0 flex items-center">
-              <div className="h-10 w-10 bg-white rounded-full flex items-center justify-center">
-                <span className="text-primary font-bold">SE</span>
-              </div>
+              <img 
+                src="/s-logo.png" 
+                alt="Salvificus Logo" 
+                className="h-10 w-10"
+              />
               <span className="ml-2 text-xl font-semibold text-white">Salvificus Establishments</span>
             </a>
             <nav className="hidden md:ml-8 md:flex md:space-x-8">
