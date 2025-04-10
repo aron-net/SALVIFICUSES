@@ -137,30 +137,30 @@ export function Hero() {
             <p className="mt-6 text-xl text-gray-300">
               We deliver excellence through experience, innovation, and unwavering commitment to your success.
             </p>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
               {[
                 {
-                  title: "An Expert Team",
+                  title: "#1. An Expert Team",
                   description: "Our consultants and technical experts are highly experienced and trained in their respective fields.",
                   icon: "👥"
                 },
                 {
-                  title: "Personalized Approach",
+                  title: "#2. Our Personalized Approach",
                   description: "We understand the unique challenges faced by our clients and offer tailored solutions to meet their needs.",
                   icon: "🎯"
                 },
                 {
-                  title: "Global Perspective",
+                  title: "#3. A Global Perspective",
                   description: "As a company catering to Ugandans abroad, we bridge the gap between global best practices and local opportunities.",
                   icon: "🌍"
                 },
                 {
-                  title: "Results-Oriented",
+                  title: "#4. Results-Oriented",
                   description: "We focus on delivering measurable outcomes that contribute to our clients' success.",
                   icon: "📈"
                 },
                 {
-                  title: "Reliable Support",
+                  title: "#5. Reliable Support",
                   description: "Our team is always available to provide guidance and support at every stage of your project.",
                   icon: "🤝"
                 }
