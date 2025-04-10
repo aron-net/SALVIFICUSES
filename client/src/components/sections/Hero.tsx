@@ -4,36 +4,33 @@ import { motion } from "framer-motion";
 import { useState } from "react";
 
 // Define service details
+const [activeHighlight, setActiveHighlight] = useState<number>(3); // Default to LABOUR EXPORT (index 3)
+
 const serviceDetails = [
   {
     title: "CONSTRUCTION",
     shortDesc: "Project Management",
     longDesc: "Our construction consultancy services include project planning, architectural design oversight, quality assurance, budget management, and full construction supervision to ensure your projects are completed on time and within budget.",
-    isHighlighted: false
   },
   {
     title: "INVESTMENT",
     shortDesc: "Advisory Services",
     longDesc: "Get expert investment advisory services including market analysis, feasibility studies, business establishment guidance in Uganda, and strategic investment opportunities designed specifically for Ugandans living abroad.",
-    isHighlighted: false
   },
   {
     title: "TECHNICAL",
     shortDesc: "Specialized Works",
     longDesc: "We provide technical consulting for electrical and mechanical installations, maintenance services, innovative technological solutions for various industries, and specialized technical support for complex projects.",
-    isHighlighted: false
   },
   {
     title: "LABOUR EXPORT",
     shortDesc: "Overseas Opportunities",
     longDesc: "Our labour export program helps qualified candidates find international job opportunities. We manage the entire process from recruitment and selection to placement, ensuring a smooth transition to working abroad.",
-    isHighlighted: true
   },
   {
     title: "LANGUAGE",
     shortDesc: "Expert Courses",
     longDesc: "Learn from our expert language tutors who ensure students gain fluency in various global languages including Spanish, French, German, and English. Our courses are designed for both personal and professional development.",
-    isHighlighted: false
   }
 ];
 
@@ -94,8 +91,11 @@ export function Hero() {
           {serviceDetails.map((service, index) => (
             <div key={index} className="relative">
               <button 
-                onClick={() => toggleService(index)}
-                className={`w-full ${service.isHighlighted ? 'bg-primary text-white' : 'bg-white'} p-6 hover:${service.isHighlighted ? 'bg-primary/90' : 'bg-gray-50'} transition-colors text-center cursor-pointer`}
+                onClick={() => {
+                  toggleService(index);
+                  setActiveHighlight(index);
+                }}
+                className={`w-full ${activeHighlight === index ? 'bg-primary text-white' : 'bg-white'} p-6 hover:${activeHighlight === index ? 'bg-primary/90' : 'bg-gray-50'} transition-colors text-center cursor-pointer`}
               >
                 <h3 className={`font-semibold ${service.isHighlighted ? '' : 'text-primary'} uppercase text-sm`}>{service.title}</h3>
                 <p className={`${service.isHighlighted ? 'text-white/80' : 'text-gray-600'} text-xs mt-2`}>{service.shortDesc}</p>
