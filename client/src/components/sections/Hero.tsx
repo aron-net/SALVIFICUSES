@@ -85,7 +85,7 @@ export function Hero() {
 
       {/* Interactive Service boxes */}
       <div className="relative z-10 max-w-6xl mx-auto px-4 -mb-32">
-        <div className="grid grid-cols-1 md:grid-cols-5 gap-1 bg-white rounded-lg shadow-xl overflow-hidden">
+        <motion.div className="grid grid-cols-1 md:grid-cols-5 gap-1 bg-white rounded-lg shadow-xl overflow-hidden"> {/*Added motion.div here*/}
           {serviceDetails.map((service, index) => (
             <div key={index} className="relative">
               <button 
@@ -121,7 +121,7 @@ export function Hero() {
               )}
             </div>
           ))}
-        </div>
+        </motion.div> {/*Added motion.div here*/}
       </div>
 
       {/* Why Choose Us Section */}
@@ -141,40 +141,33 @@ export function Hero() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {/* Card 1 */}
-            <div className="bg-white/10 backdrop-blur-lg rounded-lg p-6 transform hover:scale-105 transition-transform duration-300">
-              <div className="text-blue-400 mb-4">
-                <svg className="w-12 h-12" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-5-9h10v2H7z"/>
-                </svg>
-              </div>
-              <h3 className="text-xl font-bold text-white mb-2">#1. An Expert Team</h3>
-              <p className="text-gray-300">Our consultants and technical experts are highly experienced and trained in their respective fields.</p>
-            </div>
-
-            {/* Card 2 */}
-            <div className="bg-white/10 backdrop-blur-lg rounded-lg p-6 transform hover:scale-105 transition-transform duration-300">
-              <div className="text-red-400 mb-4">
-                <svg className="w-12 h-12" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-5-9h10v2H7z"/>
-                </svg>
-              </div>
-              <h3 className="text-xl font-bold text-white mb-2">#2. Our Personalized Approach</h3>
-              <p className="text-gray-300">We understand the unique challenges faced by our clients and offer tailored solutions to meet their needs.</p>
-            </div>
-
-            {/* Card 3 */}
-            <div className="bg-white/10 backdrop-blur-lg rounded-lg p-6 transform hover:scale-105 transition-transform duration-300">
-              <div className="text-green-400 mb-4">
-                <svg className="w-12 h-12" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-5-9h10v2H7z"/>
-                </svg>
-              </div>
-              <h3 className="text-xl font-bold text-white mb-2">#3. A Global Perspective</h3>
-              <p className="text-gray-300">As a company catering to Ugandans abroad, we bridge the gap between global best practices and local opportunities.</p>
-            </div>
-          </div>
+          <motion.div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8"> {/*Added motion.div here*/}
+            {[
+              {
+                icon: "👥",
+                title: "#4. We're Results-Oriented",
+                description: "We focus on delivering measurable outcomes that contribute to our clients' success."
+              },
+              {
+                icon: "🤝",
+                title: "#5. Reliable Support",
+                description: "Our team is always available to provide guidance and support at every stage of your project."
+              }
+            ].map((item, index) => (
+              <motion.div 
+                className="bg-white/10 backdrop-blur-lg rounded-lg p-6"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: index * 0.2 }}
+                whileHover={{ scale: 1.05 }}
+              >
+                <div className="text-4xl mb-4">{item.icon}</div>
+                <h3 className="text-xl font-bold text-white mb-2">{item.title}</h3>
+                <p className="text-gray-300">{item.description}</p>
+              </motion.div>
+            ))}
+          </motion.div> {/*Added motion.div here*/}
         </div>
       </div>
 
