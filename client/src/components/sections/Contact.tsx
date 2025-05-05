@@ -24,7 +24,7 @@ export function Contact() {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    
+
     // Validate form
     if (!formData.name || !formData.email || !formData.message) {
       toast({
@@ -82,7 +82,7 @@ export function Contact() {
     <section id="contact" className="py-16 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-base font-semibold text-primary tracking-wide uppercase">Contact Us</h2>
+          <h2 className="text-base font-semibold text-blue-600 tracking-wide uppercase">Contact Us</h2>
           <p className="mt-1 text-4xl font-extrabold text-gray-900 sm:text-5xl sm:tracking-tight">
             Get In Touch
           </p>
@@ -102,11 +102,11 @@ export function Contact() {
               <div>
                 <Label htmlFor="name">Full name</Label>
                 <div className="mt-1">
-                  <Input 
-                    type="text" 
-                    id="name" 
-                    name="name" 
-                    placeholder="John Doe" 
+                  <Input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="John Doe"
                     value={formData.name}
                     onChange={handleChange}
                     className="py-3"
@@ -116,11 +116,11 @@ export function Contact() {
               <div>
                 <Label htmlFor="email">Email</Label>
                 <div className="mt-1">
-                  <Input 
-                    type="email" 
-                    id="email" 
-                    name="email" 
-                    placeholder="john@example.com" 
+                  <Input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="john@example.com"
                     value={formData.email}
                     onChange={handleChange}
                     className="py-3"
@@ -130,11 +130,11 @@ export function Contact() {
               <div>
                 <Label htmlFor="phone">Phone</Label>
                 <div className="mt-1">
-                  <Input 
-                    type="tel" 
-                    id="phone" 
-                    name="phone" 
-                    placeholder="+1 (555) 987-6543" 
+                  <Input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    placeholder="+256 700 123 456"
                     value={formData.phone}
                     onChange={handleChange}
                     className="py-3"
@@ -144,11 +144,11 @@ export function Contact() {
               <div>
                 <Label htmlFor="message">Message</Label>
                 <div className="mt-1">
-                  <Textarea 
-                    id="message" 
-                    name="message" 
-                    rows={4} 
-                    placeholder="Tell us about your project..." 
+                  <Textarea
+                    id="message"
+                    name="message"
+                    rows={4}
+                    placeholder="Tell us about your project..."
                     value={formData.message}
                     onChange={handleChange}
                     className="py-3"
@@ -156,9 +156,9 @@ export function Contact() {
                 </div>
               </div>
               <div>
-                <Button 
-                  type="submit" 
-                  className="w-full bg-primary hover:bg-primary/90 py-6" 
+                <Button
+                  type="submit"
+                  className="w-full bg-blue-600 hover:bg-blue-700 py-6"
                   disabled={isSubmitting}
                 >
                   {isSubmitting ? "Sending..." : "Send Message"}
@@ -166,7 +166,7 @@ export function Contact() {
               </div>
             </form>
           </motion.div>
-          <motion.div 
+          <motion.div
             className="mt-12 lg:mt-0"
             initial={{ opacity: 0, x: 20 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -179,29 +179,29 @@ export function Contact() {
                 <dl className="space-y-6">
                   <div className="flex">
                     <div className="flex-shrink-0">
-                      <MapPin className="h-5 w-5 text-primary" />
+                      <MapPin className="h-5 w-5 text-blue-600" />
                     </div>
                     <div className="ml-3">
                       <dt className="text-sm font-medium text-gray-500">Address</dt>
                       <dd className="mt-1 text-sm text-gray-900">
-                        71-75 Shelton Street<br />
-                        Covent Garden, London, WC2H 9JQ<br />
-                        United Kingdom
+                        Plot 23, Nakasero Road<br />
+                        Kampala, Central Division<br />
+                        Uganda
                       </dd>
                     </div>
                   </div>
                   <div className="flex">
                     <div className="flex-shrink-0">
-                      <Phone className="h-5 w-5 text-primary" />
+                      <Phone className="h-5 w-5 text-blue-600" />
                     </div>
                     <div className="ml-3">
                       <dt className="text-sm font-medium text-gray-500">Phone</dt>
-                      <dd className="mt-1 text-sm text-gray-900">+44 7520 636249</dd>
+                      <dd className="mt-1 text-sm text-gray-900">+256 707 690 954</dd>
                     </div>
                   </div>
                   <div className="flex">
                     <div className="flex-shrink-0">
-                      <Mail className="h-5 w-5 text-primary" />
+                      <Mail className="h-5 w-5 text-blue-600" />
                     </div>
                     <div className="ml-3">
                       <dt className="text-sm font-medium text-gray-500">Email</dt>
@@ -213,10 +213,10 @@ export function Contact() {
                   <h4 className="text-sm font-medium text-gray-500 mb-4">Follow Us</h4>
                   <div className="flex space-x-4">
                     {socialLinks.map((social, index) => (
-                      <a 
-                        key={index} 
-                        href={social.href} 
-                        className="text-gray-400 hover:text-primary transition-colors duration-200"
+                      <a
+                        key={index}
+                        href={social.href}
+                        className="text-gray-400 hover:text-blue-600 transition-colors duration-200"
                       >
                         <span className="sr-only">{social.label}</span>
                         {social.icon}
@@ -225,10 +225,21 @@ export function Contact() {
                   </div>
                 </div>
               </div>
-              <div className="h-64 w-full">
-                <div className="w-full h-full bg-gray-300 flex items-center justify-center">
-                  <MapPin className="h-12 w-12 text-gray-400" />
-                </div>
+              <div className="h-64 w-full flex flex-row">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.795614600355!2d32.58227481475499!3d0.3119941996721059!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x177dbc7e76b1719b%3A0x2e54e271ee0c032e!2sUganda+House%2C+Kampala!5e0!3m2!1sen!2sus!4v1634567890123"
+                  width="50%"
+                  height="100%"
+                  style={{ border: 0 }}
+                  allowFullScreen
+                  loading="lazy"
+                  title="Uganda House, Kampala"
+                ></iframe>
+                <img
+                  src="https://salvificus.com/assets/img/ug%20hse.jpg"
+                  alt="Uganda House"
+                  className="w-1/2 h-full object-cover"
+                />
               </div>
             </div>
           </motion.div>

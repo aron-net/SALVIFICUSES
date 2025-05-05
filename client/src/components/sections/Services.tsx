@@ -1,7 +1,7 @@
 import { ServiceCard } from "@/components/ui/service-card";
 import { services } from "@/lib/data";
 import { motion } from "framer-motion";
-import { Building, Briefcase } from "lucide-react";
+import { Building, Briefcase, Users, UserCheck, Globe, Target, LifeBuoy } from "lucide-react";
 
 export function Services() {
   const containerVariants = {
@@ -20,78 +20,94 @@ export function Services() {
         <div className="text-center mb-16">
           <h2 className="text-3xl font-bold text-gray-900">
             Consultancy Firm<br/>
-            <span className="text-primary">With a Difference.</span>
+            <span className="text-blue-600">With a Difference.</span>
           </h2>
-          <h3 className="mt-2 text-xl font-semibold text-primary tracking-wide uppercase">
+          <h3 className="mt-2 text-xl font-semibold text-blue-600 tracking-wide uppercase">
             Excellence.
           </h3>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 mb-20">
-          <div>
-            <p className="text-gray-600 mb-4">
-              Salvificus Establishments Company Limited is a leading Ugandan consultancy firm providing comprehensive professional services. We offer innovative solutions and expert guidance for various sectors including construction, investment, and technical works.
-            </p>
-            <p className="font-semibold text-gray-900">
-              Always there to advise and support.
-            </p>
+        <div className="flex flex-wrap -mx-4 mb-20">
+          <div className="w-full lg:w-1/2 px-4">
+            <img 
+              src="/2.jpg" 
+              alt="International work environment" 
+              className="w-full h-auto"
+            />
           </div>
-
-          <div className="flex gap-8 items-center col-span-2">
-            <div className="bg-white p-4 rounded-md shadow-md">
-              <img 
-                src="https://images.unsplash.com/photo-1664575599736-c5197c684128?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" 
-                alt="Business consultants in meeting" 
-                className="w-full h-48 object-cover rounded"
-              />
-              <h4 className="mt-4 font-bold text-gray-900">WHO WE ARE?</h4>
-              <p className="text-sm text-gray-600 mt-2">
-                Salvificus Establishments Company Limited is a premier Ugandan consultancy firm with a focus on construction, investment, technical services, and labour export.
-              </p>
-              <a href="#" className="inline-block mt-4 text-white bg-primary py-1 px-4 rounded-full text-center text-xs">
-                •
-              </a>
-            </div>
-            
-            <div className="bg-white p-4 rounded-md shadow-md">
-              <img 
-                src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" 
-                alt="Consultancy partners" 
-                className="w-full h-48 object-cover rounded"
-              />
-              <h4 className="mt-4 font-bold text-gray-900">CONSULTANCY PARTNER</h4>
-              <p className="text-sm text-gray-600 mt-2">
-                Salvificus is your reliable partner in consultancy excellence, providing a full range of premium services tailored to your specific needs and goals.
-              </p>
-              <a href="#" className="inline-block mt-4 text-white bg-primary py-1 px-4 rounded-full text-center text-xs">
-                •
+          <div className="w-full lg:w-1/2 px-4 flex items-center">
+            <div className="px-5 py-5 lg:py-0">
+              <h2 className="text-3xl font-bold text-[#aca8ee] underline">WORK ABROAD</h2>
+              <h5 className="text-lg text-gray-600 mt-4">
+                We're the experts, ready to connect you to a reputable employer. We're with you throughout your application and travel process and will ensure that 
+                all legal requirements are met, especially concerning your security or safety. Consider enrolling in any of our several language courses for a chance
+                to become fluent in the languages commonly used for communication overseas.
+              </h5>
+              <a 
+                href="#contact" 
+                className="inline-block bg-blue-600 text-white py-2 px-6 rounded-full uppercase font-semibold hover:bg-blue-700 transition-colors mt-6"
+              >
+                BOOK YOUR APPOINTMENT
               </a>
             </div>
           </div>
         </div>
 
-        <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">Professional Services. Exceptional Results.</h2>
-
-        <motion.div 
-          className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3"
-          variants={containerVariants}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, margin: "-50px" }}
-        >
-          {services.map((service, index) => (
-            <ServiceCard 
-              key={index}
-              title={service.title}
-              description={service.description}
-              icon={service.icon}
-              iconBg={service.iconBg}
-              iconColor={service.iconColor}
-              linkColor={service.linkColor}
-              href={service.href}
-            />
-          ))}
-        </motion.div>
+        {/* <div className="py-16 bg-gray-50">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-12">
+              <h2 className="text-4xl font-bold text-gray-900">WHY CHOOSE US?</h2>
+            </div>
+            <div className="flex flex-wrap -mx-4">
+              <div className="w-full px-4">
+                <div className="bg-white p-8 rounded-lg shadow-md">
+                  <span className="inline-block bg-blue-600 text-white px-4 py-2 rounded-full uppercase font-semibold mb-6">VALUE PROPOSITION</span>
+                  <div className="flex items-start mb-4">
+                    <Users className="w-8 h-8 !text-blue-600 mr-4 mt-1" />
+                    <h3 className="text-xl font-semibold text-gray-900">
+                      #1. An Expert Team: <br />
+                      <span className="text-base text-gray-600">Our consultants and technical experts are highly experienced and trained in their respective fields.</span>
+                    </h3>
+                  </div>
+                  <div className="flex items-start mb-4">
+                    <UserCheck className="w-8 h-8 !text-blue-600 mr-4 mt-1" />
+                    <h3 className="text-xl font-semibold text-gray-900">
+                      #2. Our Personalized Approach: <br />
+                      <span className="text-base text-gray-600">We understand the unique challenges faced by our clients and offer tailored solutions to meet their needs.</span>
+                    </h3>
+                  </div>
+                  <div className="flex items-start mb-4">
+                    <Globe className="w-8 h-8 !text-blue-600 mr-4 mt-1" />
+                    <h3 className="text-xl font-semibold text-gray-900">
+                      #3. A Global Perspective: <br />
+                      <span className="text-base text-gray-600">As a company catering to Ugandans abroad, we bridge the gap between global best practices and local opportunities.</span>
+                    </h3>
+                  </div>
+                  <div className="flex items-start mb-4">
+                    <Target className="w-8 h-8 !text-blue-600 mr-4 mt-1" />
+                    <h3 className="text-xl font-semibold text-gray-900">
+                      #4. We're Results-Oriented: <br />
+                      <span className="text-base text-gray-600">We focus on delivering measurable outcomes that contribute to our clients' success.</span>
+                    </h3>
+                  </div>
+                  <div className="flex items-start mb-4">
+                    <LifeBuoy className="w-8 h-8 !text-blue-600 mr-4 mt-1" />
+                    <h3 className="text-xl font-semibold text-gray-900">
+                      #5. Reliable Support: <br />
+                      <span className="text-base text-gray-600">Our team is always available to provide guidance and support at every stage of your project.</span>
+                    </h3>
+                  </div>
+                  <a 
+                    href="#contact" 
+                    className="inline-block bg-blue-600 text-white py-3 px-8 rounded-full uppercase font-semibold hover:bg-blue-700 transition-colors mt-8"
+                  >
+                    GET IN TOUCH WITH US
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> */}
       </div>
     </section>
   );
